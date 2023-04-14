@@ -1,0 +1,67 @@
+/* CSS For my Flashcard */
+
+/* Grid container */
+.flashcard-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  margin-left: 75px;
+  justify-items: center;
+}
+
+/* Container for the entire flashcard */
+.flashcard {
+  width: 100px;
+  height: 100px;
+  margin: 10rem;
+}
+
+/* Styling for conditional rendering flipping card*/
+.card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 2s;
+}
+
+/* Container so that front and back stay positioned */
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+}
+/* Front card style */
+.card-front {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+}
+
+/* Back card style */
+.card-back {
+  transform: rotateY(180deg);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+}
+
+/* Flipped style/animation for when card is flipped */
+.flipped {
+  transform: rotateY(180deg);
+}
+
+/* Image styling */
+.img {
+  object-fit: cover;
+  border-radius: 20px;
+  max-height: 400px;
+}

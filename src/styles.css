@@ -1,0 +1,13 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.title {
+  border: 2px solid;
+}
+
+body {
+  background-color: beige;
+  border: 10px solid white;
+}
